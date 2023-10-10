@@ -180,7 +180,7 @@ let agge=29;
  }
 
  // Alert on Screen 
- alert("Something is Wrong!");
+//  alert("Something is Wrong!");
  console.log("This is simple log");
  console.error("This is an Error msg");
  console.warn("This is simple Warning msg");
@@ -188,9 +188,9 @@ let agge=29;
 
  // Prompt msg
  
- let firstName=prompt("Enter your Firstname :");
- let lastName=prompt("Enter your Lastname :");
- console.log( "Welcome", firstName,lastName);
+//  let firstName=prompt("Enter your Firstname :");
+//  let lastName=prompt("Enter your Lastname :");
+//  console.log( "Welcome", firstName,lastName);
 
  let X=5;
  let Y=18;
@@ -221,5 +221,65 @@ if((num1%10) == (num2%10)){
    console.log("Number don't have same last numbers");
 }
 
+//trim method 
+ let str="   sujit   ";
+ let newStr=str.trim();
+
+ console.log(newStr);
+ // you need to store the value of the new str in new variable 
+ // string are immuatbles in javaScripts
  
 
+ //for Uppercase and Lowercase
+
+ let string="random String";
+
+ let upper=str.toUpperCase();
+ let lower=str.toLowerCase();
+
+console.log(upper, " " ,lower);
+
+//string method with arguments 
+// Arguments is some values that we pass to the method
+
+//syntax
+//Stringname.method(arg);
+
+//Index Of
+let string1="Sujit argade";
+
+let strindex=string1.indexOf("u");
+let stringindex=string1.indexOf("a");
+
+console.log(strindex);
+console.log(stringindex);
+
+// Method Chaining
+// if we want to perfrom 2 method on single method then we use the method chaning
+
+let sujit="  arohi  ";
+
+let sujit1=sujit.toUpperCase().trim();
+console.log(sujit1);
+
+//Slice method
+
+
+let vari="ILoveCoding";
+
+let varia=vari.slice(1,5);
+console.log(varia);
+
+// replace method 
+
+let string0="ILoveCoding";
+
+let newstring=string0.replace("Love","Do");
+console.log(newstring);
+
+
+// repet method
+ let st="sujit";
+ let store=st.repeat(5);
+
+console.log(store);
