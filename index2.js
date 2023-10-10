@@ -225,3 +225,24 @@ while(j<=5){
 //     console.log("Congraulation you won");
 // }
 // ----------------------------------------------------------------------
+ let  issue1=["first","second","third","fourth","fifth","sixth","seventh"];
+
+ for (let i=0; i<=issue1.length; i++){
+    console.log(i, issue1[i]);
+ }
+
+ //reverse order
+
+ for(let i=issue1.length-1; i>=0;i--){
+    console.log("Reverse order loop on array")
+    console.log(i,issue1[i]);
+ }
+ //nesterd array and for loop:
+
+ let issue2=[["Ram","shyam","sachin"],["divyesh","ajay","priyanka","sujjit"]];
+
+ for(let i=0;i<issue2.length;i++){
+    for(let j=0;j<issue2[i].length;j++){
+        console.log(issue2[i][j]);
+    }
+ }
