@@ -171,12 +171,12 @@ for(let i=2; i<=10;i=i+2){
     console.log(i);
 }
 // Taking input from the user and print the table of that number:
-let m=prompt("Enter a number");
-m=parseInt(m);
+// let m=prompt("Enter a number");
+// m=parseInt(m);
 
-for(let i=m; i<=m*10; i=i+m ){
-    console.log(i);
-}
+// for(let i=m; i<=m*10; i=i+m ){
+//     console.log(i);
+// }
 
 //nested For loop
 
@@ -244,5 +244,38 @@ while(j<=5){
  for(let i=0;i<issue2.length;i++){
     for(let j=0;j<issue2[i].length;j++){
         console.log(issue2[i][j]);
+    }
+ }
+ //SEPRATE STUDENT MARKS PRINT BY THE SYSTEM:
+
+ let king=[["Aman", 89],["Sujit",100],["Rajani",98]];
+
+ for(let i=0; i<king.length; i++){
+    console.log(`Information of the student NO #${i+1}`);
+    for(let j=0; j<king[i].length; j++){
+        console.log(king[i][j]);
+    }
+ }
+
+ // for-of-loop 
+ 
+ let sujit=["sujit","divyesh","priyanka","rajani","ram","shayam"];
+
+ for(i of sujit){
+    console.log(i);
+ }
+
+ for(char of "sujitargade"){
+    console.log(char);
+ }
+
+ //nested for of loop
+
+ let heroes=[["siderman","superman","batman"],["wonder women","flesh","kingman","heroman"]];
+
+ for(list of heroes){
+    console.log(list);
+    for(hero of list){
+        console.log(hero);
     }
  }

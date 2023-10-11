@@ -1,0 +1,33 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: black;
+    color: #fff;
+    overflow: hidden;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.section1{
+    background-color: red;
+    border: 1px solid black;
+    height: 10rem;
+    width: 33%;
+    border-radius: 0.7rem;
+}
+.section2{
+    background-color: yellow;
+    border: 1px solid black;
+    height: 10rem;
+    width: 33%;
+    border-radius: 0.7rem;
+}
+.section3{
+    background-color: green;
+    border: 1px solid black;
+    height: 10rem;
+    width: 33%;
+    border-radius: 0.7rem;
+}
