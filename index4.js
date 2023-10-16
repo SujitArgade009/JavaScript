@@ -61,3 +61,108 @@ for(let i=0; i<=arr.length;i++){
     }
 }
 console.log(largest);
+
+
+// Object Literals
+let student={
+    name:"sujit",
+    age:25,
+    city:"Pune",
+    marks:98,
+}
+
+let pune={
+    latitude :"18.5204° N",
+    longitude: "73.8567° E",
+}
+
+const post={
+    username:"@sujya_007",
+    content:"this is my #first post",
+    repost:67,
+    likes:150,
+    tag:["@delta","@apanacollege"]
+
+}
+
+//add/edit of the object literal
+console.log(student.name);
+student.name="Rahul";
+console.log(student.name);
+student.gender="Male";
+console.log(student);
+student.marks=[67,2,323,89];
+console.log(student.marks);
+console.log(delete student.age);
+console.log(student);
+
+//Nested of object literals called: object of objects:
+//Object of objects
+let classInfo={
+    aman: {
+        grade:"A+",
+        city:"delhi"
+    },
+    sujit :{
+        grade:"b+",
+        city:"pune"
+    },
+    Rahul :{
+        grade: "c+",
+        city: "panjab"
+    }
+};
+console.log(classInfo);
+console.log(classInfo.aman.grade);
+
+//Array of objects:
+
+const info =[
+    {
+        name:"sujit",
+        grade:"A+"
+    },
+    {
+        name:"swati",
+        grade:"b+"
+    }
+];
+console.log(info);
+console.log(info[1]);
+console.log(info[1].grade);
+console.log(info[1].grade="c+");
+console.log(info[1].grade);
+console.log(info);
+console.log(info[1]);
+
+//math object // math function
+console.log(Math.floor(Math.random()*10) +20);
+console.log(Math.floor(6.4));
+console.log(Math.ceil(6.4));
+console.log(Math.random());
+
+//Guessing game:
+const UserNum=prompt("Enter the maximum Number");
+
+const random=Math.floor(Math.random() * UserNum) + 1;
+
+const Guess=prompt("Guess the number");
+console.log(Guess);
+while(true){
+
+    if(Guess =="quit"){
+        console.log("You Quit");
+        break;
+    }
+    
+    if(Guess==random){
+        console.log("You are Right!!, your random number was",random);
+        break;
+    }
+    else if(Guess < random){
+       prompt("Hint : your guess was too small, Please try again");
+    }
+    else if( Guess > random){
+        prompt("Hint : your guess was too big, Please try again");
+    }
+}
