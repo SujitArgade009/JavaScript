@@ -51,7 +51,7 @@ for(let i=1; i<=n; i++){
 console.log(`Factorial of ${n} is ${factorial}.`);
 
 // Question no :5
-// Find the larges tnumber in an array with only positive numbers
+// Find the largest number in an array with only positive numbers
 let arr=[2,23,43,53,533,532,8,7,57,567,9];
 let largest=0;
 
@@ -154,7 +154,7 @@ while(true){
         console.log("You Quit");
         break;
     }
-    
+
     if(Guess==random){
         console.log("You are Right!!, your random number was",random);
         break;
