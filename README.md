@@ -1,6 +1,6 @@
 # JavaScript
 
-***Basics of javaScripts Which will help People in Building thier Project***
+***Basics of javaScripts Which will help Peoples in Building thier Project***
 
 index.js include:
 
