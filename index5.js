@@ -350,3 +350,64 @@ console.log("hello");
 console.log("hello");
 
 // Arrow function:
+// syntax of the arrow function:
+
+const ok=(a,b)=>{
+     console.log(a+b);
+}
+// calling the arrow function:
+
+ok(4,6);
+
+
+
+// Implicit arrow function:
+// small change in syntax
+const sujya=(a,d) =>(
+    a*d
+);
+
+console.log(sujya(7,9));
+///--------- 
+// Set timeout:
+
+console.log("Hi There!");
+
+ setTimeout(() =>{
+    console.log("Set TimeOut");
+ },4000);
+console.log("Welcome to");
+
+// Set Interval:
+
+console.log("Apna college");
+
+let id = setInterval(() =>{
+    console.log("set Interval");
+ },2000);
+
+ console.log(id);
+ clearInterval(id);
+
+ /// IMPORTANT topic :
+ // this keywords behave with the arrow function and the normal function:
+
+
+ const student1={
+    name:"sujit argade",
+    age :34,
+    marks:89,
+    class: "Full stack web Developemet",
+    prop:this,
+    getName: function (){
+        console.log(this);
+        return this.name;
+    },
+    getmarks:() =>{
+        console.log(this);
+        return this.marks;
+    }
+ }
+
+ console.log(student1.getName());
+ console.log(student1.getmarks()); // Here you will get undefined for the marks value because the reason is     
