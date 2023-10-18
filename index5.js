@@ -230,6 +230,123 @@ console.log(calculator.mul(4,7));
 
 // Questionn 1: Write a JavaScript function that returns array elements larger than a number.
 
-function array(){
+let array1=[3,4,5,6,8,9,2,10];
+
+let num=5;
+
+function getElement(array1,num){
+    for(let i=0; i< array1.length; i++){
+        if(array1[i]>num){
+            console.log(array1[i]);
+        }
+    }
+}
+
+// calling the function:
+
+console.log(getElement(array1,num));
+
+// Question 2:
+
+let string="abcdabcdefgggh";
+
+let ans="abcdefgh";
+
+function uniqueElement(string){
+    let ans="";
+    for(let i=0; i<string.length;i++){
+        let currchar=string[i];
+        if(ans.indexOf(currchar)==-1){
+            ans+=currchar;
+        }
+
+    }
+    return ans;
+}
+
+//calling function:
+uniqueElement(string);
+console.log(uniqueElement(string));
+
+//question No:4
+
+ let country=["Australia","Germany","United States of America"];
+
+
+function longestName(country){
+    let ansIdx=0;
+
+    for( let i=0; i<country.length; i++){
+
+        let ansLength= country[ansIdx].length;
+        let currLength=country[i].length;
+
+        if(currLength>ansLength){
+            ansIdx=i;
+        }
+        
+    }
+    return country[ansIdx];
+}
+
+
+// callling function:
+console.log(longestName(country));
+
+//Question No 4:Write a JavaScript function to count the number of vowels in a String argument
+
+let stringq="sujitargade";
+
+function countvowel(stringq){
+    let count=0;
+
+    for(let i=0;i<stringq.length;i++){
+        if(stringq.charAt(i)=="a"||
+        stringq.charAt(i)=="e"||
+        stringq.charAt(i)=="i"||
+        stringq.charAt(i)=="o"||
+        stringq.charAt(i)=="u"){
+
+            count++;
+
+        }
+    }
+    return count;
 
 }
+
+// calling the function:
+
+console.log(countvowel(stringq));
+//---------------------------------------------------------------------------------------------------------------------------------------------
+// this keyword in javascript:
+
+const student={
+    name:"sujit Argade",
+    age:24,
+    Comapnay:"Infosys",
+    eng:76,
+    phy:89,
+    chem:98,
+    getavg(){
+        let avg=(this.eng+this.phy+this.chem)/3;
+        console.log(`${this.name} got avarage marks= ${avg}`)
+    }
+}
+
+console.log(student.getavg());
+
+// Try and Catch Statement:
+console.log("hello");
+console.log("hello");
+try{
+    console.log(q);
+}catch(err){  // we also use the catch as an function which will throw an error also
+    console.log("Caught an errror ... A is not defined");
+    console.log(err);
+}
+console.log("hello");
+console.log("hello");
+console.log("hello");
+
+// Arrow function:
