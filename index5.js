@@ -411,3 +411,44 @@ let id = setInterval(() =>{
 
  console.log(student1.getName());
  console.log(student1.getmarks()); // Here you will get undefined for the marks value because the reason is     
+
+ // Question: Write an arrow function that return a square of the numbers:
+
+ const square=(n) =>{
+    return n*n;
+ }
+ // calling the arrow function:
+ console.log(square(4));
+ // Question 2 : Write a function that print "hello World" 5 times of interval of 2s each:
+
+ let id1 = setInterval(() => {
+    console.log("hello world");
+    
+ }, 2000);
+
+ setTimeout(() => {
+    clearInterval(id1);
+    console.log("Clear Interval Ran");
+ },10000);
+//  --------------------------------------------
+const tobject ={
+    message:'Hello,World!',
+    logMessage() {
+        console.log(this.message);
+    }
+};
+
+setTimeout(tobject.logMessage,1000);
+
+// Question 1: write an function named array avrage that accepts array of an numbers and return the avrage of those numbers:
+
+const arrayAvrage=(arr)=>{
+    let total=0;
+    for( let number of arr){
+        total+=number;
+    }
+    return total/ arr.length;
+}
+
+let arr=[4,5,8,9,10,12,34,56];
+console.log(arrayAvrage(arr));
