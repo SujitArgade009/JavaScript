@@ -55,3 +55,39 @@ console.dir(nest);
 // if we want same type of the all tags then we need to use QuerySelcectorAll:
 let all=document.querySelectorAll("div a"); //you will get all the anchor tag which are present in the div
 console.dir(all);
+let Spider=document.querySelectorAll("img");
+console.dir(Spider);
+
+// Manipulkating the change of the all anchor tag in the our wabpages on HTML
+
+let ht=document.querySelectorAll(".box a");
+
+// for (let i=0;i<ht.length;i++){
+//     ht[i].style.color="yellow";
+// }
+
+// one more way to change or mainpulate the data :
+for(link of ht ){
+    link.style.color="red";
+}
+
+// Navigator:
+//1) Parent Element
+let h4=document.querySelector("h4");
+console.dir(h4);
+let parent=h4.parentElement;
+console.log(parent);
+// 2)children:
+let chid=h4.childElementCount;
+console.log(chid);
+
+
+let box= document.querySelector(".box");
+let par=box.parentElement;
+let ch=box.childElementCount;
+console.log(par);// parent of box
+console.log(ch);// children of box 
+
+//practice question :
+// Add the following element using only javascriots and diom methods
+
