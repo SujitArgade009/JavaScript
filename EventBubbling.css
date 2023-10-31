@@ -1,1 +1,13 @@
+.div{
+    background-color: rgb(207, 47, 74);
+    height: 200px;
+    width: 400px;
+}
 
+ul{
+    background-color: rgba(52, 226, 9, 0.74);
+}
+
+li{
+    background-color: rgb(12, 97, 172);
+}
