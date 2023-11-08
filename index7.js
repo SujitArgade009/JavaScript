@@ -12,7 +12,6 @@ console.dir(img); // you will get to see the indiviual properties of the img ele
 
 let ok=document.getElementById("description");
 console.log(ok);
-console.dir(ok); // dir is the function which will give you the all properties of the that id like what is that element
 console.dir(ok); // dir is the function which will give you the all 
 //properties of the that id like what is that element
 
@@ -55,6 +54,7 @@ console.dir(nest);
 // if we want same type of the all tags then we need to use QuerySelcectorAll:
 let all=document.querySelectorAll("div a"); //you will get all the anchor tag which are present in the div
 console.dir(all);
+
 let Spider=document.querySelectorAll("img");
 console.dir(Spider);
 
